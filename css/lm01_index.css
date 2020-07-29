@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    padding: 0;
+    margin:0;
+    font-family: 'Recursive', sans-serif;
+    font-size: 1.124rem;
+    font-weight: 400;
+    background: #F3F3ED;
+}
+a{
+    text-decoration: none;
+    color:#303030;
+    transition: .1s;
+    user-select: none;
+}
+a:hover{
+    opacity: 0.7;
+}
+.container{
+    width: 100%;
+    margin:0 auto;
+}
+.content{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}
+h1,h2, h3, h4, p{
+margin:0;
+padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+

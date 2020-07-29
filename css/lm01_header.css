@@ -1,0 +1,176 @@
+
+.header{
+    background-color: #fff;
+}
+.logo{
+    margin-top: 7px
+}
+.header-content{
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: minmax(160px, auto) minmax(340px, 550px) minmax(280px, auto);
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 40px;
+}
+@media (max-width: 800px){
+    .header-content{
+        grid-template-columns:1fr;
+        grid-gap: 20px;
+    }
+}
+
+.pesquisar{
+    display: grid;
+    align-items: center;
+}
+
+.pesquisar #s{
+    width: 100%;
+    font-size: 1em;
+    outline: none;
+    padding: 8px 40px 8px 10px;
+    grid-area: 1/1;
+    border:1px solid #adadad;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
+}
+.pesquisar #s:focus{
+    border:1px solid #5c5c5c;
+}
+.pesquisar #s::placeholder{
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.pesquisar #searchButtom{
+    grid-area: 1/1;
+    justify-self: end;
+    text-indent: -100px;
+    width: 49px;
+    margin-right: 1px;
+    height: 36px;
+    border:none;
+    cursor: pointer;
+    background: transparent url('../img/icons/icon_lupa.svg') no-repeat center center;
+    transition: all 0.2s;
+    outline: none;
+    border-radius: 0 3px 3px 0;
+
+}
+.pesquisar #searchButtom:hover{
+    background: transparent url('../img/icons/icon_lupa_white.svg') no-repeat center center;
+}
+
+.pesquisar span{
+    grid-area:1/1;
+    justify-self: end;
+    margin-right: 50px;
+    width: 1px;
+    height: 65%;
+    background-color: #a2a2a2;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: minmax(160px, 165px)  minmax(160px, 165px) ;
+    gap: 40px;
+}
+.nav a {
+    padding: 10px 5px 10px 40px;
+    background-position: center left !important;
+    background-repeat: no-repeat !important;
+    font-size: 0.9rem;
+    background-size: 35px !important;
+    transition: all 0.1s;
+}
+.nav a:hover{
+    opacity: 0.8;
+}
+.nav .minha-conta{
+    background: transparent url('../img/icons/user.svg');
+    position: relative;
+}
+.nav .minha-conta::before{
+    content: '';
+    width: 12px;
+    height: 20px;
+    background: transparent url('../img/icons/arrow-down.svg') no-repeat center center / contain;
+    position:absolute;
+    right: 18px;
+}
+.nav .carrinho{
+    background: transparent url('../img/icons/cart.svg');
+    position: relative;
+}
+
+.carrinho-count{
+    background-color: tomato;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    top:-5px;
+    left:18px
+}
+
+.nav-categorias{
+    background-color: #3B3B3B;
+}
+.nav-categorias a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.nav-categorias a:hover, .nav-categorias .current-menu-item a{
+    color: #fa8e64;
+    font-weight: 800;
+    position: relative;
+}
+.nav-categorias .current-menu-item a:hover{
+    color: #ff7e4bc2;
+    opacity: 1;
+}
+.current-menu-item a::before{
+    content: '';
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    background: transparent url('../img/icons/arrow-up.svg') no-repeat center center / 25px;
+    bottom: -21px;
+    user-select: none;
+    opacity: 1;
+}
+.nav-categorias ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 10px;
+
+}
+
+@media (max-width: 800px){
+    .nav-categorias ul {
+        justify-content: initial;
+        overflow-x: auto;
+        position: relative;
+        padding: 7px 10px;
+    }
+    .nav-categorias a {
+        font-size: 0.7rem;
+        padding: 0px 10px;
+    }
+}
+.banner{
+    width: 100%;
+    min-height: 200px;
+    background: #fff;
+    text-align: center;
+}
