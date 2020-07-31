@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body
 {
     padding: 0;
@@ -9,6 +12,7 @@ body
     font-size: 1.124rem;
     font-weight: 400;
     background: #F3F3ED;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -24,7 +28,7 @@ a:hover{
     margin:0 auto;
 }
 .content{
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .hidden{

@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <?php bloginfo()?> <?php wp_title('|')?>  </title>
-
     <?php wp_head(); ?>
 
 </head>
@@ -44,10 +43,12 @@ $lm03_cart_count = WC()->cart->get_cart_contents_count();
 </nav>
 </div>
 </header>
+<div class="container nav-categorias">
 <?php
 wp_nav_menu([
     'menu' => 'categorias',
     'container' => 'nav',
-    'container_class' => 'nav-categorias'
+    'container_class' => 'nav-categorias content'
 ])
 ?>
+</div>

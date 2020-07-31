@@ -1,6 +1,8 @@
 /* 
 Theme-name: EletroShop
 */
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@200;400;600&display=swap');
 @import './css/lm01_index.css';
 @import './css/lm01_header.css';
+@import './css/home.css';
+@import './css/produtos.css';
