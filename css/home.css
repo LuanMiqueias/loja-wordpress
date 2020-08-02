@@ -72,9 +72,6 @@
     background: transparent url('../img/icons/mouse_moblie_black.svg') no-repeat center right / contain;
     cursor: pointer;
 }
-.mais-vendidos{
-    /* margin:50px 0 0 0; */
-}
 
 .subtitulo h1{
     color:#303030;
@@ -183,6 +180,9 @@
      display:flex;
       align-items:center;
        justify-content:center;
+}
+.container_slide li{
+    display: none;
 }
 #metaslider_85{
     display: none;
